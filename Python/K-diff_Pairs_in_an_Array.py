@@ -37,6 +37,11 @@ class Solution:
         return ans
 
     def findPairsHashMap(self, nums: List[int], k: int) -> int:
+        """
+        Hashmap Approach
+        Time Complexity: O(N)
+        Space Complexity: O(M) where M is the number of unique numbers in nums
+        """
         counter = Counter(nums)
         ans = 0
         for x in counter:
